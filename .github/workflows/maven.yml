@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: tomcat deploy
-      run: curl -v -u tomcat:123 -T /home/runner/work/vivo/vivo/target/webapp.war 'http://43.205.112.67:8080//opt/tomcat9/webapps'
+      run: curl -v -u tomcat:123 -T /home/runner/work/vivo/vivo/target/webapp.war 'http://43.205.112.67:8080/manager/html'
